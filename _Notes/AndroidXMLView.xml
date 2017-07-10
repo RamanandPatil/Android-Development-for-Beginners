@@ -1,0 +1,85 @@
+<!-- Text View Examples -->
+<TextView
+    android:text="Happy Birthday!"
+    android:background="@android:color/darker_gray"
+    android:layout_width="150dp"
+    android:layout_height="150dp" />
+<!--
+    1. TextView is self closing tag
+    2. android:text="Happy Birthday!"
+        - This is the text which appears on the phone screen.
+    3. android:background="@android:color/darker_gray"
+        - This is the background color of the TextView layout.
+    4. android:layout_width="150dp"
+       android:layout_height="150dp"
+        - This is the width and height of the TextView layout.
+        - The value can also be given as wrap_content instead of Density-Independent Pixels(dp)
+        - The wrap_content format is as shown in the next example shown below:
+-->
+
+
+<!-- "wrap_content" value -->
+<TextView
+    android:text="Happy Birthday!"
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<!--
+    If we give "wrap_content" to android:layout_width or android:layout_height properties,
+    then the properties (width and/or height) will be auto adjusted to fit the content
+    i.e. android:text withing the TextView perfectly.
+ -->
+
+
+ <!-- android:textSize -->
+<TextView
+    android:text="Excited for the gift you'll surprise me with."
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="50sp" />
+<!--
+    textSize property allows to define the size of the text displayed on the layout, mentioned by android:text
+    The value of textSize can be given as shown above in sp(Scale-Independent Pixels)
+    The same can be achieved by some predefined text appearance properties as well. It can also be given as small, medium and large as shown in the next example:
+    Note: See Material Design Spec for more details: https://material.io/guidelines/style/typography.html#typography-typeface
+ -->
+
+<!-- android:textAppearance -->
+ <TextView
+    android:text="Excited for the gift you'll surprise me with."
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:textAppearanceLarge" />
+<!--
+    As of API 19 (KitKat):
+    • ?android:textAppearanceSmall is currently 14sp
+    • ?android:textAppearanceMedium is currently 18sp
+    • ?android:textAppearanceLarge is currently 22sp
+
+    For more details, refer: https://plus.google.com/+AndroidDevelopers/posts/gQuBtnuk6iG
+-->
+
+
+
+<!-- colors in general and Introducing android:textColor -->
+<TextView
+    android:text="I got you a free hug. Surprise!"
+    android:background="#4A148C"
+    android:textColor="#CDDC39"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="45sp" />
+<!--
+    Colors can also be given as hexadecimal value as shown above.
+    android:background="#4A148C"
+        - Sets layout background color a dark Purple
+    android:textColor="#CDDC39"
+        - Sets layout text color as Lime
+
+    For more details, refer: https://material.io/guidelines/style/color.html#color-color-palette
+    and https://www.w3schools.com/colors/colors_hex.asp
+ -->
+
+
